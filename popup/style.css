@@ -1,0 +1,75 @@
+:root {
+    --white: #fff;
+    --pastel-violet: #c099ff;
+    --rosewater: #f5e0dc;
+    --flamingo: #f2cdcd;
+    --pink: #f5c2e7;
+    --mauve: #cba6f7;
+    --red: #f38ba8;
+    --maroon: #eba0ac;
+    --peach: #fab387;
+    --yellow: #f9e2af;
+    --green: #a6e3a1;
+    --teal: #94e2d5;
+    --sky: #89dceb;
+    --sapphire: #74c7ec;
+    --blue: #89b4fa;
+    --lavender: #b4befe;
+    --text: #cdd6f4;
+    --subtext0: #a6adc8;
+    --subtext1: #bac2de;
+    --overlay0: #6c7086;
+    --overlay1: #7f849c;
+    --overlay2: #9399b2;
+    --surface0: #313244;
+    --surface1: #45475a;
+    --surface2: #585b70;
+    --base: #1e1e2e;
+    --mantle: #181825;
+    --crust: #11111b;
+    --bg-primary: #1e1e2e;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 250px;
+    height: auto;
+    margin: 0;
+}
+
+button {
+    background: var(--mauve);
+    color: var(--crust);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+button:hover {
+    background: var(--pink);
+}
+
+input {
+    background-color: var(--blue);
+    color: var(--crust);
+    border: 1px solid var(--overlay0);
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+img {
+    margin-top: 15px;
+    max-width: 100%;
+    border: 1px solid var(--surface1);
+}
