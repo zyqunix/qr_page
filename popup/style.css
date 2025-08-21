@@ -73,3 +73,7 @@ img {
     max-width: 100%;
     border: 1px solid var(--surface1);
 }
+
+h3 {
+    display: none;
+}

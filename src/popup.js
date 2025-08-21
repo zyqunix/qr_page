@@ -7,6 +7,14 @@ document.getElementById("button")?.addEventListener("click", async () => {
 });
 
 document.getElementById("custom-url")?.addEventListener("click", async () => {
-    const qrURL = URL.createObjectURL(await getQr(document.getElementById("input")?.value, 200));
-    document.getElementById("image").src = qrURL;
+    const input = document.getElementById("input")?.value;
+
+    if (!input.startsWith("https://") && !input.startsWith("http://")) {
+        document.getElementById("error").style.display = "block";
+        document.getElementById("error").innerText = "Error: Must be a valid URL!";
+    } else {
+        const qrURL = URL.createObjectURL(await getQr(input, 200));
+        document.getElementById("error").style.display = "none";
+        document.getElementById("image").src = qrURL;
+    }
 })
